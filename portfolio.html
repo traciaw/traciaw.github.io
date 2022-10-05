@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/portfolio.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <section id="navbar">
+        <div class="logo">
+            <a href="index.html" id="logo">Tracia</a>
+        </div>
+        <div>
+            <ul id="nav-link">
+                <li><a href="index.html"><i class="bi bi-house-fill"></i></a></li>
+                <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href=".../img/Resume.pdf"download>Download CV</a></li>
+                <!-- [for future fun :)]
+                <li id="cartIcon"><a href="cart.html"><i class="bi bi-cart3"></i></a></li>
+                <li id="loginIcon"><a href="login.html"><i class="bi-person-fill"></i></a></li>
+                -->
+                <a href="#" id="close"><i class="bi bi-x-lg"></i></a>
+            </ul>
+        </div>
+        <div id="mobileBurger">
+            <!--[for future fun :)]
+            <a href="cart.html"><i class="bi bi-cart3"></i></a>
+            <a href="login.html"><i class="bi-person-fill"></i></a>
+            -->
+            <i id="bar" class="bi bi-list"></i>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="showcase">
+            <div class="workwithheader">
+                <h2>eCommerce Website</h2>
+                <div class="singlework">
+                    <video width="450" height="270" autoplay loop muted>
+                        <source src="media/vid/HeptagonVidsmall.mp4" type="video/mp4" />
+                      </video>
+                    <div class="singleworktext">
+                        <h4>HEPTAGON Web Page</h4>
+                        <p>
+                            Minimum viable product (MVP) for a Furniture E-commerce website with a casual but professional layout. <br>
+                            Highly web responsiveness <br>
+                            Deployed on Heroku server
+
+                        </p>
+                        <p>
+                            <a href="https://github.com/AndyT-PrimoSpade/HeptagonE">Github</a> | <a href="https://heptagone.herokuapp.com/">Website</a><br>
+                            Tools used: HTML, CSS, JavaScript, BootStrap, SpringBoot, Java, MySQL WorkBench
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="workwithheader">
+                <h2>Password Checker</h2>
+                <div class="singlework">
+                    <video width="450" height="270" autoplay loop muted>
+                        <source src="media/vid/passwordvid.mp4" type="video/mp4" />
+                      </video>
+                    <div class="singleworktext">
+                        <h4>Password check program</h4>
+                        <p>
+                            This is a simple program that gives a 'score' for user password input. It detects the password strength by identifying the combination of lowercase, uppercase, numbers, length and special characters.
+                        </p>
+                        <p>
+                            <a href="https://github.com/traciaw/passwordchecker">Github</a> <br>
+                            Tools used: C#
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="workwithheader">
+                <h2>Flexbox</h2>
+                <div class="singlework">
+                    <video width="450" height="270" autoplay loop muted>
+                        <source src="media/vid/webresponsiveness.mp4" type="video/mp4" />
+                      </video>
+                    <div class="singleworktext">
+                        <h4>Colmar Academy FlexBox</h4>
+                        <p>
+                            An early attempt to apply what I learnt in the GenerationSG Bootcamp. Not my best work, but shows how far I'd come in comparision to this portfolio web page 😁
+                        </p>
+                        <p>
+                            <a href="https://github.com/traciaw/web1">Github</a> <br>
+                            Tools used: HTML, CSS
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

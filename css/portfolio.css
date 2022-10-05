@@ -1,0 +1,151 @@
+/*Portfolio CSS*/
+#portfolio{
+  background-image: url(../media/img/gradbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.showcase{
+display:flex;
+flex-direction: column;
+padding: 20px 50px;
+}
+.workwithheader{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 95px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255,0.3);
+  background: rgba(255, 255, 255,0.2);
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+}
+
+.workwithheader h2{
+  margin-top: 8px;
+}
+
+.singlework{
+display: flex;
+margin: 15px 80px;
+
+}
+
+/* [VID/IMG]
+.singlework img{
+  width:100px;
+  height:100px;
+}
+*/
+
+.singleworktext{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.singleworktext a{
+text-decoration: none;
+color: #3e5c76;
+}
+.singleworktext a:hover{
+  color: #f4978e;
+}
+
+@media screen and (max-width: 991px) {
+  .singlework{
+    flex-direction: column; 
+    align-items: center;  
+  }
+  .singleworktext{
+    margin-left: none;
+  }
+}
+@media (max-width:799px) {
+  .workwithheader{
+    margin-bottom: 40px;
+    border: 1px solid rgba(255, 255, 255,0.1);
+    background: rgba(255, 255, 255,0.3);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  }
+}
+@media (max-width:600px) {
+  .workwithheader h2{
+    font-size: 18px;
+  }
+  .singlework video{
+    width: auto;
+    height: 200px;
+  }
+}
+@media (max-width:530px) {
+  .showcase{
+    padding: 10px 20px;
+  }
+  .singlework video{
+    height: 200px;
+  }
+}
+@media (max-width:470px) {
+  .workwithheader h2{
+    font-size: 15px;
+  }
+  .singleworktext h4{
+    font-size: 13px;
+  }
+  .singleworktext p{
+    font-size: 12px;
+  }
+  .singlework video{
+    height: 185px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .showcase{
+  padding:15px;
+  color: #fff;
+  background: rgba(255, 255, 255,0.3);
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  }
+  .workwithheader{
+    margin-bottom: 5px;
+    color: none;
+    border: none;
+    background: none;
+    border-radius: none;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+}
+@media (max-width:400) {
+  .singlework video{
+    height: 90px;
+  }
+  .singlework video :nth-child(2){
+    margin-left: -100px;
+  }
+}
+@media(max-width:360){
+  .workwithheader{
+    margin-bottom: 2px;
+  }
+  .workwithheader h2{
+    font-size: 14px;
+  }
+  .singleworktext h4{
+    font-size: 12px;
+  }
+  .singleworktext p{
+    font-size: 10px;
+  }
+}
+@media (max-width:280) {
+  .singlework video{
+    height: 50px;
+  }
+}

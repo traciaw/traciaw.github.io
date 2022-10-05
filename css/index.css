@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight:700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #222;
+    margin: 15px 0 20px 0;
+}
+
+
+
+/*NAV BAR CSS*/
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #3e5c76;
+    box-shadow: 0 5px 15px rgba(0, 0 ,0 ,0.1);
+    z-index:999;
+    position:sticky;
+    top:0;
+    bottom: 0;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.logo a{
+    text-decoration: none; 
+    color: #748cab;
+    transition: 0.3s ease;
+}
+
+.logo a:hover,
+.logo a.active {
+    color: #f4978e;
+}
+
+#nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-link li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#nav-link li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #748cab;
+    transition: 0.3s ease;
+}
+
+#nav-link li a:hover,
+#nav-link a.active {
+    color: #f4978e;
+}
+
+#nav-link li a.active::after,
+#nav-link li a:hover::after
+{
+    content:"";
+    width: 40%;
+    height: 2px;
+    background-color:#748cab ;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobileBurger{
+    display: none;
+    align-items:center
+}
+
+#close{
+    display: none;
+}
+
+@media (max-width:799px) {
+    #navbar{
+        padding:20px 50px;
+    }
+
+
+    #nav-link{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top:0;
+        right: -300px;
+        height:100vh;
+        width:300px;
+        background-color:#3e5c76;
+        box-shadow: 0 40px 60px rgba(0, 0 ,0 ,0.35);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #nav-link.active{
+        right: 0px;
+    }
+    #nav-link li{
+        margin-bottom: 25px;
+    }
+    #mobileBurger{
+        display: flex;
+        align-items:center
+    }
+
+    #mobileBurger i{
+        color: #748cab;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    
+    #close{
+        display: initial;
+        position:absolute;
+        top: 30px;
+        left: 30px;
+        color: #748cab;
+        font-size: 24px;
+    }
+    /*IF DO NOT WANT ICON TO SHOW IN BURGER
+    #cartIcon, #loginIcon{
+        display: none;
+    }*/
+    #main .IntroProfilePic img{
+        display: none;
+    }
+
+}
+/*Main*/
+#main{
+    background-image: url("../media/img/fabriclarge.jpg");
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center center;
+    padding: 0 80px;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#main h1{
+    padding-bottom:5px;
+    font-family: 'Arvo', sans-serif;
+}
+#main span{
+    font-family: 'Caveat Brush';
+    font-size: 62px;
+    color: #f4978e;
+}
+.IntroBox{
+    background: rgba(173,181,189,0.4);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  }
+.IntroBox p{
+    /*height control*/
+    max-height: 185px;
+    overflow: hidden;
+}
+.introcv {
+    font-family: 'Caveat Brush';
+    font-size: 35px;
+    font-weight: 100;
+    color:#3e5c76;
+    text-decoration: none; 
+    transition: 0.3s ease;
+}
+
+.IntroBox a:hover {
+    color: #f4978e;
+}
+
+.IntroProfilePic img{
+    max-width: 200px;
+    height: 318px;
+    object-fit: cover;
+    object-position: center;
+    display:flex;
+    /*align-items: flex-start;*/
+    justify-content: center;
+    position: absolute;
+}
+
+@media (max-width:477px) {
+    #navbar{
+        padding:10px 30px;
+    }
+    #nav-link{
+        width:190px; 
+    }
+}
+@media screen and (max-width: 991px) {
+    #main{
+        margin: 8px;
+        }
+    #main .IntroBox h2{
+        font-size: 30px;
+    }
+    #main .IntroBox h1{
+        font-size: 35px;
+    }
+    #main .IntroBox span{
+        font-size: 39px;
+    }
+    #main .IntroBox p{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #main{
+        margin: 5px;
+    }
+    #main .IntroBox h2{
+        font-size: 25px;
+    }
+    #main .IntroBox h1{
+        font-size: 30px;
+    }
+    #main .IntroBox span{
+        font-size: 37px;
+    }
+    #main .IntroBox p{
+        display: none;
+    }
+    #main .IntroProfilePic img{
+        display: none;
+    }
+}
