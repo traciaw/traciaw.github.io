@@ -49,7 +49,8 @@ margin: 15px 80px;
 }
 .singleworktext a{
 text-decoration: none;
-color: #3e5c76;
+font-weight: 700;
+color: #3d5972;
 }
 .singleworktext a:hover{
   color: #f4978e;
