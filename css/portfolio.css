@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 /*Portfolio CSS*/
 #portfolio{
   background-image: url(../media/img/gradbg.jpg);
@@ -25,6 +26,8 @@ padding: 20px 50px;
 }
 
 .workwithheader h2{
+  font-family: 'Rock Salt', cursive;
+  font-weight: 900;
   margin-top: 8px;
 }
 
@@ -75,7 +78,7 @@ color: #3d5972;
 }
 @media (max-width:600px) {
   .workwithheader h2{
-    font-size: 18px;
+    font-size: 25px;
   }
   .singlework video{
     width: auto;
@@ -92,7 +95,7 @@ color: #3d5972;
 }
 @media (max-width:470px) {
   .workwithheader h2{
-    font-size: 15px;
+    font-size: 20px;
   }
   .singleworktext h4{
     font-size: 13px;
@@ -136,7 +139,7 @@ color: #3d5972;
     margin-bottom: 2px;
   }
   .workwithheader h2{
-    font-size: 14px;
+    font-size: 18px;
   }
   .singleworktext h4{
     font-size: 12px;
