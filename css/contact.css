@@ -46,10 +46,10 @@
 .social-icons :nth-child(2){
   color: #1d3557;
 }
-.social-icons :nth-child(3){
+/*.social-icons :nth-child(3){
   color: #25b79f;
-}
-.social-icons :nth-child(4){
+}*/
+.social-icons :nth-child(3){
   color: #0096c7;
 }
 .social-icons a:hover{
@@ -134,10 +134,10 @@
   .social-icons-vertical :nth-child(2){
     color: #3a86ff;
   }
-  .social-icons-vertical :nth-child(3){
+  /*.social-icons-vertical :nth-child(3){
     color: #1d3557;
-  }
-  .social-icons-vertical :nth-child(4){
+  }*/
+  .social-icons-vertical :nth-child(3){
     color: #25b79f;
   }
   .social-icons-vertical a:hover{
